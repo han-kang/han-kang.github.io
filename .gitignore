@@ -1,0 +1,15 @@
+# OS or Editor folders
+.idea/
+.DS_Store
+._*
+Thumbs.db
+.vscode/
+
+#
+*.log
+tmp
+.map
+.settings
+
+# oldshit
+legacy/

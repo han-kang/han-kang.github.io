@@ -1,0 +1,580 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+    link(rel="stylesheet" href="./main.css" type="text/css")
+    //- link(rel="stylesheet" href="./fontawesome561/css/solid.min.css" type="text/css")
+    //- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css" integrity="sha384-WK8BzK0mpgOdhCxq86nInFqSWLzR5UAsNg0MGX9aDaIIrFWQ38dGdhwnNCAoXFxL" crossorigin="anonymous">
+    //- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/solid.css" integrity="sha384-aj0h5DVQ8jfwc8DA7JiM+Dysv7z+qYrFYZR+Qd/TwnmpDI6UaB3GJRRTdY8jYGS4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    title="한강산업 (주)"
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  body
+    #Title.pt-md-5.pb-1.pb-md-4.text-center.bg-light
+      h1
+        img.d-inline-block.align-text-bottom(src="images/logo@1x.svg" width="42" height="42")
+        |  한강산업 (주)
+      h4.text-muted.bg-light Han Kang Industry, Inc.
+    
+      //- p.bg-dark asdf
+
+    //- nav.navbar.navbar-light.bg-light.sticky-top
+    nav#Menu.navbar.navbar-light.bg-light.justify-content-center.shadow-sm
+      ul.nav
+        li.nav-item
+          a#ToTheTop.navbar-brand.invisible(href="#" data-toggle="tooltip" data-placement="bottom" title="처음으로")
+            i.fas.fa-chevron-circle-up.text-muted
+        li.nav-item
+          a.nav-link.active.text-muted(href="#History") 연혁
+        li.nav-item
+          a.nav-link.text-muted(href="#Equipment") 장비 및 설비
+        li.nav-item
+          a.nav-link.text-muted(href="#CompanyOverview") 공장 전경
+        li.nav-item
+          a.nav-link.text-muted(href="#Products") 생산 품목
+        
+    .container
+      .row
+        .central.pt-md-5.pb-md-4.mx-auto
+          p.text-center.px-md-5.
+             모두와 더불어 사는 회사, 저희 한강산업(주)는
+            안정된 생산 능력에 기반한 철저한 품질 관리와 정확한 납기를 바탕으로
+            1986년 창립 이래 철의장품부터 대형 BLOCK까지
+            선박 부품만을 생산해온 전문 회사입니다.
+      .row.py-5.justify-content-center
+        #History.col
+          h3.text-center.my-5 연혁
+          ol.list-group.list-group-flush.mx-auto.text-center
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1986. 08. 01
+              p.mb-1 한강산업 설립(울산시 남구 여천동 소재)
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1986. 10. 01
+              p.mb-1 현대 중공업 (주) 등록업체 지정
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1991 ~ 1993
+              p.mb-1 3년 연속 우수업체 지정(현대 중공업)
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1993. 10.
+              p.mb-1 1공장 신축 이전(현 소재지)
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1997. 02. 
+              p.mb-1 2 공장 부지 확장 및 신축
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1997. 10 . 01
+              p.mb-1 한강산업 (주) 법인전환
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 1998. 11. 20
+              p.mb-1 ISO 9001 인증
+            li.list-group-item.list-group-item-action.flex-column.align-items-start
+              h5.mb-1 2002(1/4 ~ 4/4)
+              p.mb-1 품질 최우수 업체 지정(현대 중공업)
+      .row.py-5
+        .col
+          #Division.mx-auto.py-5
+            h3.text-center.py-3.my-5 조직도
+            ul#DivisionTree.pl-md-5
+              li #[strong 대표이사]
+                ul
+                  li #[strong 관리영업부]
+                    ul
+                      li #[strong 관리과]
+                  li #[strong 생산관리부]
+                    ul
+                      li #[strong 생산지원과]
+                        ul
+                          li #[strong 생산 1과]: CNC M/C 가공
+                          li #[strong 생산 2과]: B.L.T, BOTTOM STOOL, T.BLOCK
+                          li #[strong 생산 3과]: B.L.T, BOTTOM STOOL, HATCH COAMING
+                          li #[strong 생산 4과]: B.L.T, BOTTOM STOOL, T.BLOCK 소조
+                  li #[strong 품질보증부]
+      //-.row.py-5
+        .col
+          dl#Description.mx-auto
+            dt 사업내용
+            dd 조선 선박 BLOCK 제작, 대형 철구조물 제작
+            dt 생산 품목
+            dd.
+              CONTAINER SHIP T.BHD 중조 BLOCK<br />
+              BULK CARRIER BOTTOM STOOL BLOCK<br />
+              HATCH COAMING BLOCK<br />
+              BEND BUILD-UP LONGL MEMBER
+            dt 공장부지
+            dd 12,000m#[sup 2] (공장면적 : 3,900m#[sup 2])
+      .row.pt-5.justify-content-center
+        .col-md-11
+          h3#Equipment.text-center.my-5 장비 및 설비 보유 현황
+          .table-responsive
+            table.table
+              thead.bg-light
+                tr
+                  th 장비명
+                  th 사양
+                  th 
+                    .d-none.d-sm-block 수량
+                  th 제조사
+              tbody
+                tr
+                  td CNC GAS CUTTING M/C
+                  td <sup>M</sup>6,000*<sup>l</sup>40,000
+                  td 1
+                  td 유광 공업사
+                tr
+                  td PLASMA CUTTING M/C
+                  td DS-75A
+                  td 1
+                  td -
+                tr
+                  td CO<sub>2</sub>
+                  td HK-500
+                  td 45
+                  td 현대중전기산업 외
+                tr
+                  td B.O.C
+                  td -
+                  td 12
+                  td -
+                tr
+                  td GRAVITY
+                  td -
+                  td 4
+                  td -
+                tr
+                  td GOUGING
+                  td 1000#[i.text-secondary A]
+                  td 3
+                  td 제일특수기전
+                tr
+                  td SUBMERGED,ARL W/D
+                  td 1500#[i.text-secondary A]
+                  td 3
+                  td -
+                tr
+                  td ALUMINIUM MIG
+                  td 500#[i.text-secondary A]
+                  td 2
+                  td MILLER
+                tr
+                  td ALUMINIUM TIG
+                  td 500#[i.text-secondary A]
+                  td 2
+                  td MILLER
+                tr
+                  td SUS TIG
+                  td 500#[i.text-secondary A]
+                  td 2
+                  td 현대중전기산업
+                tr
+                  td 용접봉 건조로
+                  td 1800*1200
+                  td 1
+                  td -
+                tr
+                  td COMPRESSOR
+                  td 7#[i.text-secondary hp]*3, 15#[i.text-secondary hp]*1
+                  td 4
+                  td 한신, 경원산업
+                tr
+                  td FORK LIFT
+                  td 7#[i.text-secondary ton]
+                  td 1
+                  td T.C.M
+                tr
+                  td AUTOMATIC LEVEL
+                  td -
+                  td 3
+                  td SOKKIA
+                tr
+                  td OVER HEAD CRANE
+                  td 30#[i.text-secondary ton]+5#[i.text-secondary ton] 복합
+                  td 1
+                  td 대호산기
+                tr
+                  td OVER HEAD CRANE
+                  td 10#[i.text-secondary ton]
+                  td 6
+                  td 대호산기
+                tr
+                  td OVER HEAD CRANE
+                  td 5#[i.text-secondary ton]
+                  td 3
+                  td 대호산기
+                tr
+                  td OVER HEAD CRANE
+                  td 3#[i.text-secondary ton]
+                  td 1
+                  td 대호산기
+      .row.pt-2
+        .col-lg.pb-2
+          img(src="images/IMG_0448(3).jpg" width="100%")
+        .col-lg.pb-2
+          img(src="images/IMG_0461(2).jpg" width="100%")
+      .row
+        .col-lg.pb-2
+          img(src="images/IMG_0474(2).jpg" width="100%")
+        .col-lg.pb-2
+          img(src="images/IMG_0489(2).jpg" width="100%")
+      .row
+        .col-lg.pb-2
+          img(src="images/IMG_0513(2).jpg" width="100%")
+        .col-lg.pb-2
+          img(src="images/IMG_0514(2).jpg" width="100%")
+      .row
+        .col-md.pb-2
+          img(src="images/IMG_0445.jpg" width="100%")
+        .col-md.pb-2
+          img(src="images/IMG_0458.jpg" width="100%")
+        .col-md.pb-2
+          img(src="images/IMG_0485(2).jpg" width="100%")
+
+      .row.py-5
+        .col-12
+          h3#CompanyOverview.text-center.mt-5 공장 전경
+          p.text-muted.text-center.
+            공장부지 12,000#[i.text-secondary m<sup>2</sup>] (공장면적 3,900#[i.text-secondary m<sup>2</sup>])
+        #CompanyOverviewCarousel.carousel.slide.col-sm(data-ride="carousel")
+          ol.carousel-indicators
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="0" class="active")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="1")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="2")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="3")
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src="images/IMG_0444.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0402.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장 1Bay
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0538.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장 2Bay
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0456.jpg" alt="..")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장, 사무실
+          a.carousel-control-prev(href="#CompanyOverviewCarousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#CompanyOverviewCarousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
+
+      .row.py-5.justify-content-center
+        .col-12
+          h3#Products.text-center.mt-5 생산 품목
+        .w-100
+        .col-12.col-sm-3
+          ul.text-muted.pl-lg-0
+            li CONTAINER SHIP T.BHD 중조 BLOCK
+        .col-12.col-sm-3
+          ul.text-muted.pr-lg-1
+            li BULK CARRIER BOTTOM STOOL BLOCK
+        .col-12.col-sm-3
+          ul.text-muted.pr-lg-1
+            li HATCH COAMING BLOCK
+        .col-12.col-sm-3
+          ul.text-muted.pr-lg-0
+            li BEND BUILD-UP LONGL MEMBER
+        .w-100
+        #ProductsCarousel.carousel.slide.col-sm(data-ride="carousel")
+          ol.carousel-indicators
+            li(data-target="#ProductsCarousel" data-slide-to="0" class="active")
+            li(data-target="#ProductsCarousel" data-slide-to="1")
+            li(data-target="#ProductsCarousel" data-slide-to="2")
+            li(data-target="#ProductsCarousel" data-slide-to="3")
+            li(data-target="#ProductsCarousel" data-slide-to="4")
+            li(data-target="#ProductsCarousel" data-slide-to="5")
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src="images/IMG_0553(2).jpg" alt="..")
+              .carousel-caption.d-none.d-md-block
+                h5 Longl Member
+                p Bend Build-up Longl Member
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0554.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 Longl Member
+                p Bend Build-up Longl Member (2)
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0567.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 T.BHD
+                p Container Ship T.BHD
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0556.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 T.BHD
+                p Container Ship T.BHD (2)
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0557.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 T.BHD
+                p Container Ship T.BHD (3)
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0564.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 T.BHD
+                p Container Ship T.BHD (4)
+          a.carousel-control-prev(href="#ProductsCarousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#ProductsCarousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
+
+      .row.py-5.justify-content-center
+          .col-md-11
+            h3.text-center.my-5 생산 능력
+            .table-responsive
+              table.table
+                thead.bg-light
+                  tr
+                    th 구분
+                    th 1Bay
+                    th 2Bay
+                    th 3Bay
+                tbody
+                  tr
+                    th 제작품 
+                    td T.BHD + BLT
+                    td T.BHD
+                    td T.BHD + BLT
+                  tr
+                    th(rowspan=2) 정반면적
+                    td 6*12*2#[i.text-secondary EA]
+                    td 6*12*4#[i.text-secondary EA]
+                    td 6*12*2#[i.text-secondary EA]
+                  tr
+                    td 144#[i.text-secondary m<sup>2</sup>]
+                    td 288#[i.text-secondary m<sup>2</sup>]
+                    td 144#[i.text-secondary m<sup>2</sup>]
+                  tr
+                    th 배열 가능(BLOCK)
+                    td 2
+                    td 4
+                    td 2
+                  tr
+                    th 정반 회전율(월)
+                    td 3.5
+                    td 7
+                    td 2
+                  tr
+                    th(rowspan=2) 생산 능력(BLOCK)
+                    td 4
+                    td 14
+                    td 4
+                  tr
+                    td 800#[i.text-secondary ton]
+                    td 800#[i.text-secondary ton]
+                    td 800#[i.text-secondary ton]
+
+
+      //-.row
+        .col-lg
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d2495.551913450225!2d129.33029491251853!3d35.72923684563264!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3567b4c81cb1300d%3A0xc7afb3da61592b5c!2z7ZWc6rCV7IKw7JeFKOyjvCk!5e1!3m2!1sen!2sus!4v1544445518038" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          adress
+            | #[strong 본사, 제 1 공장]<br />
+            | 경상북도 경주시 외동읍 개곡공단길 30-92<br />
+            small.text-muted Tel 
+            a(href="tel:0547460935") 054) 746-0935~8
+            br
+            small.text-muted Fax 
+            a(href="fax:0547460934") 054) 746-0934
+            br
+            br
+            br
+        .col-lg
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4939.284691249049!2d129.27325241591842!3d35.71567923568809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664b8e90866b83%3A0x861705c6890af0b5!2sHan+Kang+Industry%2C+Inc.+Plant+2!5e1!3m2!1sen!2sus!4v1544686861808" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          address
+            | #[strong 제 2 공장]<br />
+            | 경상북도 경주시 외동읍 제내길 64<br />
+            small.text-muted Tel 
+            a(href="tel:0547460937") 054) 746-0937~8
+            br
+            br
+            br
+      #Map.row.py-5
+        .col
+          .card-deck
+            .card.border-light.pb-5
+              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d2495.551913450225!2d129.33029491251853!3d35.72923684563264!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3567b4c81cb1300d%3A0xc7afb3da61592b5c!2z7ZWc6rCV7IKw7JeFKOyjvCk!5e1!3m2!1sen!2sus!4v1544445518038" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+              .card-body
+                address
+                  h5.card-title 본사, 제 1 공장
+                  p.card-text 경상북도 경주시 외동읍 개곡공단길 30-92
+                  small.text-muted Tel 
+                  a(href="tel:0547460935") 054) 746-0935~8
+                  br
+                  small.text-muted Fax 
+                  a(href="fax:0547460934") 054) 746-0934
+            .card.border-light
+              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4939.284691249049!2d129.27325241591842!3d35.71567923568809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664b8e90866b83%3A0x861705c6890af0b5!2sHan+Kang+Industry%2C+Inc.+Plant+2!5e1!3m2!1sen!2sus!4v1544686861808" width="100%" height="450" frameborder="0" style="border:0"   allowfullscreen)
+              .card-body
+                address
+                  h5.card-title 제 2 공장
+                  p.card-text 경상북도 경주시 외동읍 제내길 64
+                  small.text-muted Tel 
+                  a(href="tel:0547460937") 054) 746-0937~8
+
+   
+      .row.py-5
+        .col
+          h3#Recruitment.text-center.my-5 사원 모집
+          p.text-center 당사는 현대중공업 협력업체로서 아래와 같이 사원을 모집합니다.
+          table#RecruitmentTable.table.table-hover.mx-auto
+            caption
+              ul
+                li 제출 서류 : 이력서, 주민등록 등본 1부
+                li 연령 : 27세 이하
+                li 혜택 : 4대보혐, 상여금, 퇴직금
+            thead.bg-light
+              tr
+                th#RecruitmentTable-col1 모집부문
+                th#RecruitmentTable-col2 인원
+                th 자격요건
+            tbody
+              tr
+                td 총무/경리
+                td O명
+                td Microsoft Office/한글 사용 가능자
+              tr
+                td 설계
+                td O명
+                td Auto CAD 사용 가능자
+          
+          p.text-center 문의사항은 #[a(href="tel:0547460935") 054) 746-0935~8] 또는 #[a(href="mailto:hkuh526@hanmail.net") hkuh526@hanmail.net]로 연락 바랍니다.
+
+
+      hr
+      
+
+      footer.py-5.text-center
+        p(id="copyright")
+        p 漢江産業(株)
+        p
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")
+    script.
+      $(document).ready(function(){
+        $("#copyright").text("1986-" + (new Date()).getFullYear() + ", Han Kang Industry, Inc.");
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+
+
+        // for "sticky-top" but IE
+        let browserName = (function() {        
+            try {
+                let e;
+                let f = e.width;
+            } catch(e) {
+                let err = e.toString();
+
+                if(err.indexOf("not an object") !== -1) {
+                    return "safari";
+                } else if(err.indexOf("Cannot read") !== -1) {
+                    return "chrome";
+                } else if(err.indexOf("e is undefined") !== -1) {
+                    return "firefox";
+                } else if(err.indexOf("Unable to get property 'width' of undefined or null reference") !== -1) {
+                    if(!(false || !!document.documentMode) && !!window.StyleMedia) {
+                        return "edge";
+                    } else {
+                        return "IE";
+                    }
+                } else if(err.indexOf("cannot convert e into object") !== -1) {
+                    return "opera";
+                } else {
+                    return undefined;
+                }
+            }
+        })();
+        if (browserName == "safari" || browserName == "chrome" ||browserName == "firefox" ){
+          $("#Menu").addClass("sticky-top");
+          $("#ToTheTop").removeClass("invisible");
+        }
+
+
+        // for Tree View
+        $.fn.extend({
+          treed: function(o) {
+
+            var openedClass = 'glyphicon-minus-sign';
+            var closedClass = 'glyphicon-plus-sign';
+
+            if (typeof o != 'undefined') {
+              if (typeof o.openedClass != 'undefined') {
+                openedClass = o.openedClass;
+              }
+              if (typeof o.closedClass != 'undefined') {
+                closedClass = o.closedClass;
+              }
+            };
+
+            //initialize each of the top levels
+            var tree = $(this);
+            tree.addClass("tree");
+            tree.find('li').has("ul").each(function() {
+              var branch = $(this); //li with children ul
+              branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+              branch.addClass('branch');
+              //- branch.on('click', function(e) {
+              //-   if (this == e.target) {
+              //-     var icon = $(this).children('i:first');
+              //-     icon.toggleClass(openedClass + " " + closedClass);
+              //-     $(this).children().children().toggle();
+              //-   }
+              //- })
+              //- branch.children().children().toggle();
+            });
+            //- //fire event from the dynamically added icon
+            //- tree.find('.branch .indicator').each(function() {
+            //-   $(this).on('click', function() {
+            //-     $(this).closest('li').click();
+            //-   });
+            //- });
+            //- //fire event to open branch if the li contains an anchor instead of text
+            //- tree.find('.branch>a').each(function() {
+            //-   $(this).on('click', function(e) {
+            //-     $(this).closest('li').click();
+            //-     e.preventDefault();
+            //-   });
+            //- });
+            //- //fire event to open branch if the li contains a button instead of text
+            //- tree.find('.branch>button').each(function() {
+            //-   $(this).on('click', function(e) {
+            //-     $(this).closest('li').click();
+            //-     e.preventDefault();
+            //-   });
+            //- });
+          }
+        });
+        $('#DivisionTree').treed({openedClass:'glyphicon-chevron-right', closedClass:'glyphicon-chevron-down'});
+      });
