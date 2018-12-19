@@ -38,35 +38,78 @@ html(lang="en")
         |  한강산업 (주)
       h4.text-muted.bg-light Han Kang Industry, Inc.
     
-      //- p.bg-dark asdf
+    nav#Menu.navbar.bg-light.justify-content-center.shadow-sm
+      ul.nav.navbar-nav.scrollNav.w-100.text-center
+        //- a#ToTheTop.navbar-brand.mr-0.mr-sm-2.invisible(href="#" data-toggle="tooltip" data-placement="bottom" title="처음으로")
+        //-   i.fas.fa-chevron-circle-up.text-muted
+        li
+          a.text-muted(href="#CompanyOverview") 전경
+        li
+          a.text-muted(href="#History") 연혁
+        li
+          a.text-muted(href="#Division") 조직도
+        li
+          a.text-muted(href="#Equipment") 설비
+        li
+          a.text-muted(href="#Products") 생산품
+        li
+          a.text-muted(href="#Map") 주소
+        li
+          a.text-muted(href="#Recruitment") 공고
 
-    //- nav.navbar.navbar-light.bg-light.sticky-top
-    nav#Menu.navbar.navbar-light.bg-light.justify-content-center.shadow-sm
-      ul.nav
-        li.nav-item
-          a#ToTheTop.navbar-brand.invisible(href="#" data-toggle="tooltip" data-placement="bottom" title="처음으로")
-            i.fas.fa-chevron-circle-up.text-muted
-        li.nav-item
-          a.nav-link.active.text-muted(href="#History") 연혁
-        li.nav-item
-          a.nav-link.text-muted(href="#Equipment") 장비 및 설비
-        li.nav-item
-          a.nav-link.text-muted(href="#CompanyOverview") 공장 전경
-        li.nav-item
-          a.nav-link.text-muted(href="#Products") 생산 품목
-        
+
     .container
-      .row
-        .central.pt-md-5.pb-md-4.mx-auto
-          p.text-center.px-md-5.
+      //- 인사말
+      .row.py-3.pb-5
+        .central.pt-sm-3.pb-sm-4.mx-auto
+          p.text-center.px-2.px-sm-1.
              모두와 더불어 사는 회사, 저희 한강산업(주)는
             안정된 생산 능력에 기반한 철저한 품질 관리와 정확한 납기를 바탕으로
             1986년 창립 이래 철의장품부터 대형 BLOCK까지
             선박 부품만을 생산해온 전문 회사입니다.
-      .row.py-5.justify-content-center
-        #History.col
-          h3.text-center.my-5 연혁
-          ol.list-group.list-group-flush.mx-auto.text-center
+
+      //- 공장 전경
+      #CompanyOverview.row.py-5
+        .col-12
+          h3.text-center.mt-2.mt-sm-5.mb-4 공장 전경
+          p.text-muted.text-center.
+            공장부지 12,000#[i.text-secondary m<sup>2</sup>] (공장면적 3,900#[i.text-secondary m<sup>2</sup>])
+        #CompanyOverviewCarousel.carousel.slide.col-sm(data-ride="carousel")
+          ol.carousel-indicators
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="0" class="active")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="1")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="2")
+            li(data-target="#CompanyOverviewCarousel" data-slide-to="3")
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src="images/IMG_0444.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0402.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장 1Bay
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0538.jpg")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장 2Bay
+            .carousel-item
+              img.d-block.w-100(src="images/IMG_0456.jpg" alt="..")
+              .carousel-caption.d-none.d-md-block
+                h5 제 1 공장, 사무실
+          a.carousel-control-prev(href="#CompanyOverviewCarousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#CompanyOverviewCarousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
+      .row.py-5.my-4
+
+      //- 연혁
+      #History.row.pt-5.justify-content-center
+        .col-12
+          h3.text-center.mt-2.mt-sm-5 연혁
+          ol#HistoryList.list-group.list-group-flush.mx-auto.text-center
             li.list-group-item.list-group-item-action.flex-column.align-items-start
               h5.mb-1 1986. 08. 01
               p.mb-1 한강산업 설립(울산시 남구 여천동 소재)
@@ -91,41 +134,33 @@ html(lang="en")
             li.list-group-item.list-group-item-action.flex-column.align-items-start
               h5.mb-1 2002(1/4 ~ 4/4)
               p.mb-1 품질 최우수 업체 지정(현대 중공업)
-      .row.py-5
-        .col
-          #Division.mx-auto.py-5
-            h3.text-center.py-3.my-5 조직도
-            ul#DivisionTree.pl-md-5
-              li #[strong 대표이사]
-                ul
-                  li #[strong 관리영업부]
-                    ul
-                      li #[strong 관리과]
-                  li #[strong 생산관리부]
-                    ul
-                      li #[strong 생산지원과]
-                        ul
-                          li #[strong 생산 1과]: CNC M/C 가공
-                          li #[strong 생산 2과]: B.L.T, BOTTOM STOOL, T.BLOCK
-                          li #[strong 생산 3과]: B.L.T, BOTTOM STOOL, HATCH COAMING
-                          li #[strong 생산 4과]: B.L.T, BOTTOM STOOL, T.BLOCK 소조
-                  li #[strong 품질보증부]
-      //-.row.py-5
-        .col
-          dl#Description.mx-auto
-            dt 사업내용
-            dd 조선 선박 BLOCK 제작, 대형 철구조물 제작
-            dt 생산 품목
-            dd.
-              CONTAINER SHIP T.BHD 중조 BLOCK<br />
-              BULK CARRIER BOTTOM STOOL BLOCK<br />
-              HATCH COAMING BLOCK<br />
-              BEND BUILD-UP LONGL MEMBER
-            dt 공장부지
-            dd 12,000m#[sup 2] (공장면적 : 3,900m#[sup 2])
-      .row.pt-5.justify-content-center
+      .row.py-5.my-5
+      
+      //- 조직도
+      #Division.row.py-5.justify-content-center
+        .mx-auto.mt-2.mt-sm-5
+          h3.text-center.mt-2.mt-sm-5.mb-sm-5 조직도
+          ul#DivisionTree.pl-md-5
+            li #[strong 대표이사]
+              ul
+                li #[strong 관리영업부]
+                  ul
+                    li #[strong 관리과]
+                li #[strong 생산관리부]
+                  ul
+                    li #[strong 생산지원과]
+                      ul
+                        li #[strong 생산 1과]: CNC M/C 가공
+                        li #[strong 생산 2과]: B.L.T, BOTTOM STOOL, T.BLOCK
+                        li #[strong 생산 3과]: B.L.T, BOTTOM STOOL, HATCH COAMING
+                        li #[strong 생산 4과]: B.L.T, BOTTOM STOOL, T.BLOCK 소조
+                li #[strong 품질보증부]
+      .row.py-5.my-5
+      
+      //- 장비 및 설비 보유 현황
+      #Equipment.row.pt-5.justify-content-center
         .col-md-11
-          h3#Equipment.text-center.my-5 장비 및 설비 보유 현황
+          h3.text-center.mt-2.mt-sm-5.mb-4.mb-sm-5 장비 및 설비 보유 현황
           .table-responsive
             table.table
               thead.bg-light
@@ -248,45 +283,12 @@ html(lang="en")
           img(src="images/IMG_0458.jpg" width="100%")
         .col-md.pb-2
           img(src="images/IMG_0485(2).jpg" width="100%")
+      .row.py-5.my-5
 
-      .row.py-5
+      //- 생산 품목
+      #Products.row.py-5.mt-5.justify-content-center
         .col-12
-          h3#CompanyOverview.text-center.mt-5 공장 전경
-          p.text-muted.text-center.
-            공장부지 12,000#[i.text-secondary m<sup>2</sup>] (공장면적 3,900#[i.text-secondary m<sup>2</sup>])
-        #CompanyOverviewCarousel.carousel.slide.col-sm(data-ride="carousel")
-          ol.carousel-indicators
-            li(data-target="#CompanyOverviewCarousel" data-slide-to="0" class="active")
-            li(data-target="#CompanyOverviewCarousel" data-slide-to="1")
-            li(data-target="#CompanyOverviewCarousel" data-slide-to="2")
-            li(data-target="#CompanyOverviewCarousel" data-slide-to="3")
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src="images/IMG_0444.jpg")
-              .carousel-caption.d-none.d-md-block
-                h5 제 1 공장
-            .carousel-item
-              img.d-block.w-100(src="images/IMG_0402.jpg")
-              .carousel-caption.d-none.d-md-block
-                h5 제 1 공장 1Bay
-            .carousel-item
-              img.d-block.w-100(src="images/IMG_0538.jpg")
-              .carousel-caption.d-none.d-md-block
-                h5 제 1 공장 2Bay
-            .carousel-item
-              img.d-block.w-100(src="images/IMG_0456.jpg" alt="..")
-              .carousel-caption.d-none.d-md-block
-                h5 제 1 공장, 사무실
-          a.carousel-control-prev(href="#CompanyOverviewCarousel" role="button" data-slide="prev")
-            span.carousel-control-prev-icon(aria-hidden="true")
-            span.sr-only Previous
-          a.carousel-control-next(href="#CompanyOverviewCarousel" role="button" data-slide="next")
-            span.carousel-control-next-icon(aria-hidden="true")
-            span.sr-only Next
-
-      .row.py-5.justify-content-center
-        .col-12
-          h3#Products.text-center.mt-5 생산 품목
+          h3.text-center.mt-2.mt-sm-5.mb-4 생산 품목
         .w-100
         .col-12.col-sm-3
           ul.text-muted.pl-lg-0
@@ -346,53 +348,55 @@ html(lang="en")
           a.carousel-control-next(href="#ProductsCarousel" role="button" data-slide="next")
             span.carousel-control-next-icon(aria-hidden="true")
             span.sr-only Next
+      .row.py-5.my-5
 
-      .row.py-5.justify-content-center
-          .col-md-11
-            h3.text-center.my-5 생산 능력
-            .table-responsive
-              table.table
-                thead.bg-light
-                  tr
-                    th 구분
-                    th 1Bay
-                    th 2Bay
-                    th 3Bay
-                tbody
-                  tr
-                    th 제작품 
-                    td T.BHD + BLT
-                    td T.BHD
-                    td T.BHD + BLT
-                  tr
-                    th(rowspan=2) 정반면적
-                    td 6*12*2#[i.text-secondary EA]
-                    td 6*12*4#[i.text-secondary EA]
-                    td 6*12*2#[i.text-secondary EA]
-                  tr
-                    td 144#[i.text-secondary m<sup>2</sup>]
-                    td 288#[i.text-secondary m<sup>2</sup>]
-                    td 144#[i.text-secondary m<sup>2</sup>]
-                  tr
-                    th 배열 가능(BLOCK)
-                    td 2
-                    td 4
-                    td 2
-                  tr
-                    th 정반 회전율(월)
-                    td 3.5
-                    td 7
-                    td 2
-                  tr
-                    th(rowspan=2) 생산 능력(BLOCK)
-                    td 4
-                    td 14
-                    td 4
-                  tr
-                    td 800#[i.text-secondary ton]
-                    td 800#[i.text-secondary ton]
-                    td 800#[i.text-secondary ton]
-
+      //- 생산 능력
+      #Ability.row.py-5.justify-content-center
+        .col-md-11
+          h3.text-center.my-5 생산 능력
+          .table-responsive
+            table.table
+              thead.bg-light
+                tr
+                  th 구분
+                  th 1Bay
+                  th 2Bay
+                  th 3Bay
+              tbody
+                tr
+                  th 제작품 
+                  td T.BHD + BLT
+                  td T.BHD
+                  td T.BHD + BLT
+                tr
+                  th(rowspan=2) 정반면적
+                  td 6*12*2#[i.text-secondary EA]
+                  td 6*12*4#[i.text-secondary EA]
+                  td 6*12*2#[i.text-secondary EA]
+                tr
+                  td 144#[i.text-secondary m<sup>2</sup>]
+                  td 288#[i.text-secondary m<sup>2</sup>]
+                  td 144#[i.text-secondary m<sup>2</sup>]
+                tr
+                  th 배열 가능(BLOCK)
+                  td 2
+                  td 4
+                  td 2
+                tr
+                  th 정반 회전율(월)
+                  td 3.5
+                  td 7
+                  td 2
+                tr
+                  th(rowspan=2) 생산 능력(BLOCK)
+                  td 4
+                  td 14
+                  td 4
+                tr
+                  td 800#[i.text-secondary ton]
+                  td 800#[i.text-secondary ton]
+                  td 800#[i.text-secondary ton]
+      .row.py-5.my-5
 
       //-.row
         .col-lg
@@ -418,11 +422,13 @@ html(lang="en")
             br
             br
             br
-      #Map.row.py-5
-        .col
+      //- 지도
+      #Map.row.mt-0.mt-sm-5.py-0.py-sm-5
+        .col-12
+          h3.text-center.mt-0.mt-sm-5.mb-4.mb-sm-5 주소
           .card-deck
-            .card.border-light.pb-5
-              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d2495.551913450225!2d129.33029491251853!3d35.72923684563264!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3567b4c81cb1300d%3A0xc7afb3da61592b5c!2z7ZWc6rCV7IKw7JeFKOyjvCk!5e1!3m2!1sen!2sus!4v1544445518038" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+            .card.border-light.mb-5
+              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d2495.551913450225!2d129.33029491251853!3d35.72923684563264!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3567b4c81cb1300d%3A0xc7afb3da61592b5c!2z7ZWc6rCV7IKw7JeFKOyjvCk!5e1!3m2!1sen!2sus!4v1544445518038" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen)
               .card-body
                 address
                   h5.card-title 본사, 제 1 공장
@@ -432,21 +438,22 @@ html(lang="en")
                   br
                   small.text-muted Fax 
                   a(href="fax:0547460934") 054) 746-0934
-            .card.border-light
-              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4939.284691249049!2d129.27325241591842!3d35.71567923568809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664b8e90866b83%3A0x861705c6890af0b5!2sHan+Kang+Industry%2C+Inc.+Plant+2!5e1!3m2!1sen!2sus!4v1544686861808" width="100%" height="450" frameborder="0" style="border:0"   allowfullscreen)
+            .card.border-light.mb-5
+              iframe.card-img-top(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4939.284691249049!2d129.27325241591842!3d35.71567923568809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664b8e90866b83%3A0x861705c6890af0b5!2sHan+Kang+Industry%2C+Inc.+Plant+2!5e1!3m2!1sen!2sus!4v1544686861808" width="100%" height="430" frameborder="0" style="border:0"   allowfullscreen)
               .card-body
                 address
                   h5.card-title 제 2 공장
                   p.card-text 경상북도 경주시 외동읍 제내길 64
                   small.text-muted Tel 
                   a(href="tel:0547460937") 054) 746-0937~8
+      .row.py-5.my-5
 
-   
-      .row.py-5
-        .col
-          h3#Recruitment.text-center.my-5 사원 모집
-          p.text-center 당사는 현대중공업 협력업체로서 아래와 같이 사원을 모집합니다.
-          table#RecruitmentTable.table.table-hover.mx-auto
+      //- 사원 모집
+      #Recruitment.row.py-5.mb-5.pb-5
+        .col.mb-5.pb-5
+          h3.text-center.mt-2.mt-sm-5.mb-4.mb-sm-5 사원 모집
+          p.text-center.px-4 당사는 현대중공업 협력업체로서 아래와 같이 사원을 모집합니다.
+          table#RecruitmentTable.table.table-hover.mx-auto.mb-5
             caption
               ul
                 li 제출 서류 : 이력서, 주민등록 등본 1부
@@ -467,13 +474,12 @@ html(lang="en")
                 td O명
                 td Auto CAD 사용 가능자
           
-          p.text-center 문의사항은 #[a(href="tel:0547460935") 054) 746-0935~8] 또는 #[a(href="mailto:hkuh526@hanmail.net") hkuh526@hanmail.net]로 연락 바랍니다.
-
-
-      hr
+          p.text-center.mb-5.pb-5 문의사항은 #[a(href="tel:0547460935") 054) 746-0935~8] 또는 #[a(href="mailto:hkuh526@hanmail.net") hkuh526@hanmail.net]로 연락 바랍니다.
+      .row.py-5.my-5
+      .row.py-5.my-5
+      hr.mt-5.pt-5
       
-
-      footer.py-5.text-center
+      footer.pb-5.text-center
         p(id="copyright")
         p 漢江産業(株)
         p

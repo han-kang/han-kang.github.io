@@ -12,7 +12,6 @@ a img{
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
 }
-
 details > summary {
   padding: 2px 6px;
   width: 15em;
@@ -25,7 +24,7 @@ details > summary {
     max-width: 670px;
 }
 .card {
-    min-width: 340px;
+    min-width: 330px;
 }
 .carousel-caption {
     color: white;
@@ -35,16 +34,26 @@ details > summary {
     1px 1px 0 #000;
 }
 
-#Division {
-    max-width: 580px;
+.navbar {
+    padding-left: 0
 }
-#History {
-    max-width: 500px;
+.scrollNav {
+    display:inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
-#Description {
-    max-width: 500px;
+.scrollNav li {
+    display:inline-block;
+    margin-left:3%;
 }
 
+#DivisionTree {
+    max-width: 580px;
+}
+#HistoryList {
+    max-width: 500px;
+}
 #RecruitmentTable {
     max-width: 500px;
 }
@@ -54,9 +63,6 @@ details > summary {
 #RecruitmentTable-col1 {
     min-width: 55px;
 }
-
-
-
 
 .tree,
 .tree ul {
@@ -89,7 +95,6 @@ details > summary {
     /* font-weight: 700; */
     position: relative
 }
-
 .tree ul li:before {
     content: "";
     display: block;
@@ -101,18 +106,15 @@ details > summary {
     top: 1em;
     left: 0
 }
-
 .tree ul li:last-child:before {
     background: #fff;
     height: auto;
     top: 1em;
     bottom: 0
 }
-
 .indicator {
     margin-right: 5px;
 }
-
 .tree li button,
 .tree li button:active,
 .tree li button:focus {
